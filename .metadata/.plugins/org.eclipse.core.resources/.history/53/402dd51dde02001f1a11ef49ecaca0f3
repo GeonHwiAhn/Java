@@ -1,0 +1,30 @@
+package com.kh.imageEx;
+
+import java.io.File;
+
+public class ImagePR2 {
+//바탕화면에 이미지폴더 / 동물이름.txt 파일 만들어준 후
+	//동물이름 소 고양이 돼지 토끼 호랑이 이름을 \n 작성해서 만들어주고
+	//동물이름을 만들어 준 다음에
+	//좋아하는 동물이름으로 폴더 이름 변경한 다음
+	//삭제하기
+	
+	public static void main(String[] args) {
+		
+		File 폴더만들기 = new File("c:/Users/user1/Desktop/이미지");
+		
+		System.out.println("존재합니까? : " + 폴더만들기.exists());
+		
+		if(폴더만들기.exists()) {
+			System.out.println("폴더가 이미 존재합니다.");
+		} else {
+			폴더만들기.mkdir();
+			System.out.println("폴더 새로 만들기 성공!");
+		}
+		
+		
+		
+	}
+	
+	
+}

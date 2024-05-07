@@ -1,0 +1,12 @@
+package com.kh.practice.charCheck.exception;
+
+public class charCheckexception extends Exception{
+
+	public charCheckexception() {
+		super();
+	}
+		
+	public charCheckexception(String msg) {
+		super(msg);
+	}
+}
